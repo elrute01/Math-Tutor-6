@@ -120,11 +120,11 @@ void DisplaySummaryReport(vector<vector<int> > &questions) {
         attempts = questions.at(i).at(5);
 
         //display the question
-        cout << "    " << setw(2) << rightNum << "  "
+        cout << "    " << right << setw(2) << rightNum << "  "
                 << setw(3) << rightNum << " "
                 << mathSymbol << " "
-                << setw(3) << leftNum << " = "
-                << setw(5) << correctAnswer << " ";
+                << left << setw(3) << leftNum << " = "
+                << right << setw(5) << correctAnswer << " ";
 
         // display the attempts
         if (attempts == 0) {
